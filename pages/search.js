@@ -9,7 +9,7 @@ import noResult from "../assets/images/noresult.svg";
 
 import { fetchApi, baseUrl } from "../utils/fetchApi";
 
-const search = ({ properties }) => {
+const Search = ({ properties }) => {
   const [searchFilters, setSearchFilters] = useState(false);
   const router = useRouter();
 
@@ -79,4 +79,4 @@ export async function getServerSideProps({ query }) {
   };
 }
 
-export default search;
+export default Search;
